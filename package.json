@@ -1,0 +1,32 @@
+{
+  "name": "brastrullo",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "app/app.js",
+  "dependencies": {
+    "gulp-livereload": "^3.8.0",
+    "gulp": "^3.9.0",
+    "http-server": "^0.6.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "bower": "^1.5.2",
+    "gulp-util": "^3.0.6",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-junit-reporter": "^0.2.2",
+    "karma-chrome-launcher": "^0.1.12",
+    "nodemailer": "^1.4.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
+    "nodemailer-smtp-transport": "^1.0.3",
+    "requirejs": "^2.1.20",
+    "protractor": "^2.2.0",
+    "shelljs": "^0.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

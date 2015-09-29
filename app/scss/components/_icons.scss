@@ -1,0 +1,21 @@
+.lnr-chevron-down {
+  display: block;
+  font-size: 60px;
+}
+
+@media screen and (min-width: $br-sm){
+  .contactinfo {
+    display: flex;
+    flex-direction: row;
+    img {
+      max-width: $icon-sz;
+      max-height: $icon-sz;
+    }
+  }
+}
+
+@media screen and (min-width: $br-md){
+  .mainlogo {
+    font-size: 1.75em;
+  }
+}

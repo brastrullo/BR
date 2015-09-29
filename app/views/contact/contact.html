@@ -1,0 +1,12 @@
+<article class="contact">
+  <p>{{contact.message}}</p>
+  <form class="contactform" action="javascript:mail()" method="post">
+    <label class="srt" for="name">Name:</label>
+    <input id="name" type="text" name="name" placeholder="Name" title="Name"required>
+    <label class="srt" for="email">Email:</label>
+    <input id="email" type="email" name="email" placeholder="Email" title="Email" required>
+    <label class="srt" for="email">Message:</label>
+    <textarea id="message"  rows="5" name="message" placeholder="Type message here." title="Type message here." required></textarea>
+    <input class="submit" type="submit" value="Submit">
+  </form>
+</article>

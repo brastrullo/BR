@@ -1,0 +1,134 @@
+body {
+  overflow: auto;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  font-family: inherit;
+}
+
+.topbanner {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 1.5em;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+.content {
+  display: inline-block;
+  top: $pgtitle-height;
+  right: 0;
+  height: 100%;
+  width: $content-floated;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pgtitle {
+  z-index: 10;
+  margin: 0;
+  position: fixed;
+  align-content: flex-start;
+  height: $pgtitle-height;
+  width: $content-floated;
+  top: 0;
+  right: 0;
+  background-color: $bg-colour;
+  h1 {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+  }
+
+  h1:before {
+    content: "";
+    position: absolute;
+    left: center($pgtitle-underline-width);
+    bottom: 2px;
+    height: 1px;
+    width: $pgtitle-underline-width;
+    border-bottom: 1px solid gray;
+  }
+}
+
+nav {
+  li {
+    list-style: none;
+  }
+}
+
+ nav li a:hover {
+  border-bottom: 1px solid black;
+}
+
+//SCREEN READER ONLY
+.srt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+//MEDIA QUERIES
+@media screen and (max-width: $br-sm) {
+  .content {
+    width: 100%;
+    position: absolute;
+    top: calc(#{$header-height} + .5em);
+  }
+}
+
+@media screen and (min-width: $br-md) {
+  .content {
+    width: $content-floated;
+    height: 100vh;
+    float: right;
+  }
+
+  header {
+    height: 100%;
+    width: $header-floated;
+    float: left;
+  }
+
+  .footer {
+    right: 0;
+    width: $footer-floated;
+    float: right;
+  }
+}
+
+@media screen and (min-width: $br-xl) {
+  .content {
+    width: $content-floated-lrg;
+    float: right;
+    right: 0;
+  }
+
+  .pgtitle {
+    width: $content-floated-lrg;
+  }
+
+  header {
+    height: 100%;
+    width: $header-floated-lrg;
+    float: left;
+  }
+
+  .footer {
+    right: 0;
+    width: $footer-floated-lrg;
+    float: right;
+  }
+}

@@ -1,0 +1,54 @@
+//FUNCTIONS
+
+//center with left positioning
+@function center($width) {
+  @return calc(50% - (#{$width} / 2));
+}
+
+//VARIABLES
+
+//Formatting
+
+$pgtitle-height: 25vh;
+$pgtitle-underline-width: 90%;
+$icon-sz: 32px;
+$contactinfo-level: calc(#{$pgtitle-height} - #{$icon-sz});
+$contactinfo-width: calc(#{$icon-sz} * 3); //3 icons
+
+$navList-top-margin: .75em;
+$navItem-padding: 0 1em;
+$navItem-margin: $navList-top-margin 0;
+
+$header-floated: 20%;
+$header-height: 100px;
+
+$content-floated: 80%;
+
+$header-floated-lrg: 10%;
+$content-floated-lrg: 90%;
+
+$footer-floated: $content-floated;
+$footer-floated-lrg: $content-floated-lrg; //lrg break mq
+$footer-height: 1.1em;
+
+$content-height: calc(100vh - (#{$header-height} + #{$footer-height}));
+
+//Colours
+$bg-colour: white;
+
+//Media Queries
+$br-sm: 600px;
+$br-md: 601px;
+$br-lg: 1000px;
+$br-xl: 1500px;
+
+//Project List
+$proj-img-sz : 7em;
+$proj-spacing: .5;
+
+//Forms
+$input-spacing: 2em 0;
+
+//Fonts
+$font-default: 'Lato', sans-serif;
+$font-headers: sans-serif;

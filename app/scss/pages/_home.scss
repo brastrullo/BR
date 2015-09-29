@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  h1 {
+    margin: 0;
+    max-height: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: $br-md){
+  .home {
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: $content-floated;
+    right: 0;
+    margin: 0;
+    top: 0;
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: $br-xl){
+  .home {
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: $content-floated-lrg;
+    right: 0;
+    margin: 0;
+    top: 0;
+    position: fixed;
+  }
+  h1 {
+    width: 50%;
+  }
+}
+  

@@ -1,0 +1,13 @@
+.contact {
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: $br-md){
+  width: $content-floated;
+}
+
+@media screen and (min-width: $br-lg){
+  width: $content-floated-lrg;
+}

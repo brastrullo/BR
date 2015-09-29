@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js" ng-controller="TitleCtrl">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Still under-construction. | Bradley Rastrullo is a Front-End Developer based in Toronto, Canada who specializes in JavaScript, SCSS/CSS and HTML">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title ng-bind="nav[states.active].title"></title>
+  <link rel="shortcut icon" href="/icon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css"></script>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+<header>
+  <nav>
+  <span class="mainlogo" ng-click="states.active = 0"><a href="/" title="Home">b||r</a></span>
+  <ul class="navList">
+    <li ng-repeat="item in nav" class="navItem" ng-class="{'active': item.id == states.active}" ng-click="states.active = item.id"><a href="/{{item.title}}">{{item.title}}</a></li>
+  </ul>
+  <ul class="contactinfo">
+      <li title="twitter.com/brastrullo"><a href="https://twitter.com/brastrullo"><img src="img/twitter.png" alt="Twitter"></a></li>
+      <li title="ca.linkedin.com/in/bradleyrastrullo"><a href="https://ca.linkedin.com/in/bradleyrastrullo"><img src="img/linkedin.png" alt="LinkedIn"></a></li>
+      <li title="github.com/brastrullo"><a href="https://github.com/brastrullo"><img src="img/github.png" alt="Github"></a></li>           
+  </ul>
+  </nav>
+</header>
+  <div class="topbanner">AngularJS | Still Under Construction.</div>
+  <div>
+    <div ng-if="states.active !== 0" class="pgtitle"><h1 ng-bind="nav[states.active].title"></h1></div>
+  </div>
+
+  <div class="content" ng-view autoscroll></div>
+
+  <div class="footer"><span>&#169;</span> 2015 Bradley Rastrullo</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="views/contact/ajax.js"></script>
+  <script src="views/controllers.js"></script>
+</body>
+</html>

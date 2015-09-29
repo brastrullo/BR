@@ -1,0 +1,28 @@
+[
+  {
+    "id" : "shialeright",
+    "title" : "Shia LeRight",
+    "imgUrl" : "img/project1.jpg",
+    "imgAlt" : "Shia LeRight",
+    "summary" : "A simple daily goal tracker. Shia was right.",
+    "link" : "http://site.com",
+    "details" : "Coming Soon."
+
+  },
+  {
+    "id" : "wantify",
+    "title" : "Wantify",
+    "imgUrl" : "img/project2.jpg",
+    "imgAlt" : "project2",
+    "summary" : "A Shopify clone made modular with AngularJS and Flexbox in Sass.",
+    "link" : "http://site.com",
+    "details" : "Coming Soon"
+  },
+  {
+    "id" : "stayinside",
+    "title" : "Project3",
+    "imgUrl" : "img/project3.jpg",
+    "imgAlt" : "project3",
+    "summary" : "A blog layout. Just flexing my SCSS chops."
+  }
+]

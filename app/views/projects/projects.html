@@ -1,0 +1,14 @@
+<article class="projects">
+  <ul class="projectLst">
+    <li>Project hosting coming soon. Here's the line up:</li>
+    <li class="projectItem" ng-repeat="project in projects">
+      <!-- <a href="/projects/{{project.id}}"> --><img class="projectImg" ng-src="{{project.imgUrl}}" alt="{{project.imgAlt}}"><!-- </a> -->
+      <div>
+        <!-- <h2 class="projectTitle">{{project.title}}</h2>  -->       
+        <p class="projectSummary">{{project.summary}}</p>
+        <span class="projectLink" title="Coming Soon.">See it Live.</span>
+      </div>
+    </li>
+  </ul>
+  <a href="/contact" ng-click="states.active = 3" title="Contact"><span class="lnr lnr-chevron-down"></span></a>
+</article>
